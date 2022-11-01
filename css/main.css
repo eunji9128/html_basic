@@ -35,6 +35,8 @@
 .container {
     width: 800px;
     font-family: sans-serif;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .blog-img {
@@ -59,4 +61,85 @@
 
 .user-content {
     clear: both;
+}
+
+.navbar li {
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    background-color: #eee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.navbar a {
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.main-background {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/shoes.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 1px;
+}
+
+.main-title {
+    font-size: 64px;
+    color: #eee;
+    margin: 32px 16px 16px 16px;
+    padding: 1px;
+}
+
+.main-content {
+    margin: 16px;
+    font-size: 32px;
+    padding: 1px;
+    color: lightgray;
+}
+
+.main-btn{
+    margin: 16px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: darkolivegreen;
+    color: #eee;
+    font-size: 16px;
+}
+
+.info-background {
+    width: 800px;
+    height: 200px;
+    background-color: #eee;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: -100px;
+    font-family: sans-serif;
+}
+
+.info-title {
+    font-size: 16px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    top: 16px;
+}
+
+.info-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    top: 64px;
 }
