@@ -1,3 +1,24 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+html {
+    line-height: 1.15;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 8px;
+}
+
+li, a {
+    text-decoration: none;
+}
+
 .profile {
     width: 100px;
     display: block;
@@ -111,7 +132,9 @@
 }
 
 .info-background {
-    width: 800px;
+    width: 80%;
+    max-width: 800px;
+    min-width: 600px;
     margin: auto;
     padding: 20px;
     text-align: center;
@@ -120,3 +143,77 @@
     top: -100px;
     font-family: sans-serif;
 }
+
+.contact-box {
+    width: 400px;
+    background-color: white;
+    padding: 30px;
+    margin: auto;
+    letter-spacing: -1px;   
+}
+
+.form-box {
+    padding: 0px;
+    margin: auto;
+}
+
+input {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.form-top {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.form-left {
+    width: 48%;
+    float: left;
+    margin-right: 2%;
+}
+
+.form-right {
+    width: 48%;
+    float: left;
+    margin-left: 2%;
+}
+
+.form-bottom {
+    clear: both;
+    width: 100%;
+    margin-top: 10px;
+    padding: 1px;
+}
+
+.form-submit {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.form-submit input {
+    width: 10px;
+    float: left;
+}
+
+.form-submit button {
+    width: 100px;
+    float: right;
+    background-color: gold;
+    color: white;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
