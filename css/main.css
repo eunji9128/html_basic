@@ -112,34 +112,11 @@
 
 .info-background {
     width: 800px;
-    height: 200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
     background-color: #eee;
     position: relative;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
     top: -100px;
     font-family: sans-serif;
-}
-
-.info-title {
-    font-size: 16px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 200px;
-    top: 16px;
-}
-
-.info-content {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 600px;
-    top: 64px;
 }
