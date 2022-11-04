@@ -92,3 +92,28 @@ td, th {
 </body>
 ```
 - 위처럼 style 속성을 table로 바꾸어주면 div tag로도 table을 만들 수 있다 > 하지만 table tag가 편하므로 거의 안 씀
+
+### td merge & nth-child selector
+``` html
+<body>
+    <div>
+        <table class="cart-table">
+            <tr>
+                <td>1</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td colspan="2">2</td>
+            </tr>
+    </div>
+</body>
+```
+```css
+.cart-table td:nth-child(2) {
+    width: 400px;
+}
+```
+- merged td를 만들기 위해서는 colspan="" 속성을 이용하면 된다
+- 특정 td 셀렉터는 td:nth-chile(n) 속성을 이용하면 된다
+- n 자리에 숫자는 특정 위치 td, even은 모든 짝수 번째 td, odd는 홀수
+- n 자리에 3n+0 이라고 쓰면 3, 6, 9 등 3의 배수 번째 td만 셀렉트, 3n+1 은 4, 7, 10...

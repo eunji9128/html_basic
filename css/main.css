@@ -182,6 +182,7 @@ table {
     width: 50%;
     float: left;
     padding: 10px;
+    box-sizing: border-box;
 }
 
 .w-100 {
@@ -197,3 +198,33 @@ table {
     border: 1px solid gray;
 }
 
+.cart-background {
+    background-color: lightblue;
+    padding: 30px;
+}
+
+.cart-table {
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid lightblue;
+    border-width: 1px 0px 1px 0px;
+    padding: 10px;
+}
+
+.cart-table thead {
+    text-align: center;
+}
+
+.cart-table tbody {
+    text-align: right;
+}
+
+.cart-section {
+    width: 800px;
+    margin: auto;
+    padding: 20px;
+}
