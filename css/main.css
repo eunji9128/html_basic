@@ -19,6 +19,18 @@ li, a {
     text-decoration: none;
 }
 
+input, textarea {
+    box-sizing: border-box;
+}
+
+td, th {
+    border: 1px solid black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
 .profile {
     width: 100px;
     display: block;
@@ -144,9 +156,7 @@ li, a {
     font-family: sans-serif;
 }
 
-input, textarea {
-    box-sizing: border-box;
-}
+
 
 .form-background {
     background-color: black;
@@ -186,3 +196,4 @@ input, textarea {
     border-radius: 5px;
     border: 1px solid gray;
 }
+
