@@ -138,3 +138,74 @@ div#header>p.title*3 <!-- tab or enter -->
 - Extension으로 코딩 칠 때 지진이 일어남(...)
 
 
+## Head tag
+### CCS file
+```html
+<head>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+```
+- CSS 파일 첨부를 위한 링크
+    - 상대 경로: 폴더 내 경로
+    - 절대 경로: 도메인 경로
+
+### style tag
+```html
+<head>
+    <style>
+        .button {
+            color: red;
+        }
+    </style>
+</head>
+```
+- CSS file 대신 style tag를 head에 넣어 사용할 수도 있다
+- body tag 에 넣어도 되는데, html은 위에서 아래로 코드를 읽기 때문에 초기 사이트 로딩 시 파일이 잠시 깨질 수 있다
+
+### title
+```html
+<head>
+    <title>Document</title>
+</head>
+```
+- 브라우저 탭에 뜨는 사이트 제목
+
+### meta tag
+```html
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="사이트 소개글">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+```
+- charset: 사이트 인코딩 형식
+- description: 사이트 검색 결과 화면에 뜨는 글귀
+- keywords: 검색 키워드
+- viewport: 사이트 초기 zoom 레벨이나 폭 지정(반응형 웹에 필수)
+    - width=device-width: 기기 실제 폭으로 렌더링
+    - initial-scale: 접속 시 화면 줌레벨
+
+### og(open graph)
+```html
+<head>
+    <meta property="og:image" content="/이미지경로.jpg">
+    <meta property="og:description" content="사이트 설명">
+    <meta property="og:title" content="사이트 제목">
+</head>
+```
+![image](https://user-images.githubusercontent.com/80051721/201022692-53702615-6375-4d22-bcae-ae4d37c288b8.png)
+- 카톡, 페북 등에 사이트 링크 공유 시 뜨는 카드 정보 커스터마이징
+
+### favicon
+```html
+<head>
+    <link rel="icon" href="아이콘경로.ico" type="image/x-icon">
+</head>
+```
+- 브라우저 탭 사이트 타이틀 앞에 붙는 아이콘 커스터마이징
+- ico 대신 png도 가능하나 ico가 호환성이 가장 좋다
+- 32x32 사이즈를 사용
+- rel="apple-touch-icon-precomposed" 등의 속성으로 바탕화면 바로가기 아이콘도 지정이 가능한데, OS마다 속성이 달라 검색하여 사용하면 된다
+    - (참고) favicon generator를 사용하면 OS별로 만들어 준다
+
