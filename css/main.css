@@ -228,3 +228,16 @@ table {
     margin: auto;
     padding: 20px;
 }
+
+.topnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: papayawhip;
+    padding: 10px;
+}
+
+.topnav-item {
+    margin-right: 20px;
+}
