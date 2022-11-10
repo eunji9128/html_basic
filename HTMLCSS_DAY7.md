@@ -103,3 +103,38 @@ body {
     - ![image](https://user-images.githubusercontent.com/80051721/201009725-e9081d16-9846-4126-8041-dda6966d60ad.png)
 
 
+## 유용한 부가 기능
+### Format Document
+- 우클릭 > Format Document 클릭하면 자동으로 코드 정렬을 해준다(VS code 설치 불필요)
+
+### Emmet
+- Selector를 이용해 HTML/CSS를 쉽게 생성할 수 있는 부가 기능이다(VS code 설치 불필요)
+```html
+div.container>div <!-- tab or enter -->
+
+<div class="container">
+    <div></div>
+</div>
+
+div#header>p.title*3 <!-- tab or enter -->
+
+<div id="header">
+    <p class="title"></p>
+    <p class="title"></p>
+    <p class="title"></p>
+</div>
+```
+- selector에서 #은 id, .은 class, >은 자식 개체를 의미하며, *3이면 같은 개체를 3개 생성해준다
+- 이외 html 축약어
+    - ! tab > html 문서 시작 템플릿 생성
+    - lorem tab > lorem ipsum 문구 생성
+    - p tab > p tag 생성 등등
+- 이외 css 축약어
+    - m10 tab > margin: 10px;
+    - mt10 tab > margin-top: 10px;
+    - w100% tab > width: 100%; 등등
+
+### Power Mode
+- Extension으로 코딩 칠 때 지진이 일어남(...)
+
+
