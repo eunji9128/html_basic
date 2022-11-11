@@ -125,13 +125,15 @@ table {
     color: #eee;
     margin: 32px 16px 16px 16px;
     padding: 1px;
+    text-align: center;
 }
 
 .main-content {
     margin: 16px;
-    font-size: 32px;
+    font-size: 20px;
     padding: 1px;
     color: lightgray;
+    text-align: center;
 }
 
 .main-btn{
@@ -240,4 +242,36 @@ table {
 
 .topnav-item {
     margin-right: 20px;
+}
+
+.list-container {
+    display: flex;
+    max-width: 800px;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.list-box {
+    padding: 10px;
+    width: 25%;
+}
+
+@media screen and (max-width: 1000px) {
+    .main-title {
+        font-size: 30px;
+    }
+
+    .list-box {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .list-box {
+        width: 100%;
+    }
 }
