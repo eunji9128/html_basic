@@ -246,10 +246,10 @@ table {
 
 .list-container {
     display: flex;
-    max-width: 800px;
+    max-width: 1200px;
     padding: 20px;
     margin: auto;
-    margin-top: 50px;
+    margin-top: 20px;
     margin-bottom: 50px;
     text-align: center;
     flex-wrap: wrap;
@@ -258,6 +258,17 @@ table {
 .list-box {
     padding: 10px;
     width: 25%;
+}
+
+.list-container i {
+    background-color: burlywood;
+    width: 100px;
+    height: 100px;
+    box-sizing: border-box;
+    border-radius: 50px;
+    padding-top: 25px;
+    margin-top: 20px;
+    color: white;
 }
 
 @media screen and (max-width: 1000px) {
