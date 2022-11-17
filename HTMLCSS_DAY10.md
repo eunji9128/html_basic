@@ -46,3 +46,60 @@
 - 사이즈 정보는 사이트에서 참고할 수 있다
 - 대규모 웹페이지/회사에서는 조건부 클래스를 직접 만들어 사용하는 경우가 많다
 
+
+## CSS 유지보수
+### 스타일 덮어쓰기
+- CSS 유지 보수를 위해 원본 파일을 변경하지 못하고 스타일을 덮어 씌울 때 다음과 같은 방법이 있다
+1. 같은 클래스명이나 스타일을 하단에 작성
+```html
+<head>
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/main2.css" rel="stylesheet">
+</head>
+```
+```css
+/* main.css */
+.box {
+    background: red;
+}
+
+/* main.css or main2.css */
+.box {
+    background: blue;
+}
+```
+- 같은 클래스명을 같은 css 파일 혹은 새로운 css 파일에 재 정의할 경우, 클래스명이 같더라도 하단에 정의한 스타일을 우선적으로 적용한다
+
+2. 우선 순위를 높여 작성
+```html
+<div class="container">
+    <p class="content" id="c-id" style="color: blue;">content</p>
+</div>
+```
+- tag < class < id < style < !important 순으로 우선 순위가 높다
+- 더 우선 순위가 높은 속성을 적용하여 스타일을 재 적용할 수 있으나, 여러번 수정해야 할 경우 사용할 수 있는 우선 순위가 한정적이므로 추천하는 방식은 아니다
+    - (참고) 특히 id 속성은 프론트/백엔드 개발 시에도 사용하므로 스타일에는 사용하지 않는 것이 좋다
+
+3. Specificity(구체성) 높여서 작성
+```css
+.container .box {
+    color: red;
+}
+
+div.container .box {
+    color: blue;
+}
+
+div.container p.box {
+    color: greed;
+}
+```
+- 셀렉터 갯수가 많아질 수록 우선 순위가 높아진다(아래로 갈수록 우선 적용)
+    - (참고) 초기 작성 시 셀렉터를 많이 & 복잡하게 사용하면 유지 보수를 할 수록 코드가 복잡해진다 > .class 를 명료하게 사용하는 버릇을 들이면 좋다
+
+### 좋은 코드
+1. 내가 짠 코드가 나중에 수정이 쉽고 관리가 쉬워지면 좋다
+2. 확장성이 좋으면 좋다
+    - 지금 만든 class를 다른 페이지에서도 쉽게 활용할 수 있는 지
+    - 지금 만든 class를 복사해서 더 유용한 class를 만들기 쉬울 지
+3. 양이 적으면 좋다(선택 사항)
