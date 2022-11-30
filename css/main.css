@@ -312,6 +312,13 @@ table {
     top: 50%;
 }
 
+input::-webkit-file-upload-button {
+    background: skyblue;
+    border: none;
+    padding: 5px;
+    color: white;
+}
+
 @media screen and (max-width: 1000px) {
     .main-title {
         font-size: 30px;
